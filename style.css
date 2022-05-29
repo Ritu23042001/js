@@ -140,15 +140,3 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: lightseagreen;
-    text-decoration: none;
-}

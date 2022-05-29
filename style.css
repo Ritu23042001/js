@@ -8,7 +8,7 @@
 
 html{
     font-size: 16px;
-    background-color: #636363;
+    background-color: #564747;
 }
 
 .calculator{
@@ -115,20 +115,20 @@ html{
 
 .row #calculate{
     color: rgb(0, 0, 0);
-    background-color: #46e0bc;
+    background-color: #46e079;
     width : 131px;
     border-radius: 50px;
 }
 .row #delete{
     color: #FFF;
-    background-color: #e05046;
+    background-color: #f52214;
 }
 
 #division, #multiplication, #subtraction, #addition {
-    color: #18b893;
+    color: #46e079;
 }
 footer {
-    background-color: #222;
+    background-color: #0d0c0c;
     color: #fff;
     font-size: 14px;
     bottom: 0;

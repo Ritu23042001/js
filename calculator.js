@@ -1,6 +1,7 @@
 const input_element = document.querySelector(".input");
 const output_operation_element = document.querySelector(".operation .value");
 const output_result_element = document.querySelector(".result .value");
+
 let calculator_buttons = [
     {
         name : "delete",
@@ -99,25 +100,28 @@ let calculator_buttons = [
         type : "calculate"
     }
 ];
+
 let data = {
     operation : [],
     result : [],
 }
 
-
 function createCalculatorButtons(){
     const btns_per_row = 4;
     let added_btns = 0;
-    calculator_buttons.forEach((button, index)=>{
-        if(added_btns % btns_per_row == 0){
-            input_element.innerHTML += <div class="row"></div>;
+
+    calculator_buttons.forEach( (button, index) => {
+        if( added_btns % btns_per_row == 0 ){
+            input_element.innerHTML += `<div class="row"></div>`;
         }
-        const row = document.querySelector("row:last-child");
-        row.innerHTML += <button id="%{button.name}">
-            ${button.symbol}
-        </button>;
+        
+        const row = document.querySelector(".row:last-child");
+        row.innerHTML += `<button id="${button.name}">
+                            ${button.symbol}
+                          </button>`;
+
         added_btns++;
-    })
+    });
 }
 createCalculatorButtons();
 
@@ -174,7 +178,6 @@ function calculator( button ){
 
     updateOutputOperation( data.operation.join('') );
 }
-
 
 function updateOutputOperation(operation){
     output_operation_element.innerHTML = operation;

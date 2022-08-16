@@ -1,1 +1,2 @@
 # calculator
+basics of js
